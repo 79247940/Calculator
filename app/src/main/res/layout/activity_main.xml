@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <com.mtools.Calculator.view.TextInputContainer
+                android:id="@+id/kva"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/kva_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/kvas"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:textColor="@color/textColorPrimary"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="14sp" />
+
+            </com.mtools.Calculator.view.TextInputContainer>
+
+            <TextView
+                android:id="@+id/kva_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="***" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <com.mtools.Calculator.view.TextInputContainer
+                android:id="@+id/Kwatts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/kw_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/kw"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:textColor="@color/textColorPrimary"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="14sp" />
+
+            </com.mtools.Calculator.view.TextInputContainer>
+
+            <TextView
+                android:id="@+id/kw_value"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="***" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="清空" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="计算" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

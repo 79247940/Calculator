@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">常用计算</string>
+    <string name="kvas">KVA/千伏安</string>
+    <string name="kw">KW/千瓦</string>
+</resources>
